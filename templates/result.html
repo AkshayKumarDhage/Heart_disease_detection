@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Heart Disease Detection Results</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/one-page-wonder.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Machine Learning</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white" style="background: -webkit-linear-gradient(left, #2ba8e3 0%, #eb6375 100%); padding-bottom: 40px; padding-top: 86px">
+    <div class="container">
+          <img class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrP0uGO8T_KHpbAWsCl2_Nq86b_L7FoCrfCl1MtBl2k-1mbndVNA" alt="Heart Care Logo">
+      </div>
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0">Results</h1>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container text-center">
+        <h1 class="masthead-subheading mb-0" style="padding-bottom: 28px; padding-top: 22px">Machine Learning Model prediction result.</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="padding-bottom: 20px">
+      <div class="row align-items-center">
+        <div class="container">
+          <div class="container">
+              <h3>Heart Disease Prediction Report</h3>
+              {% for key,value in values.items() %}
+                <h5 class="shadow-none p-2 mb-2 bg-light rounded px-md-5">{{ key }} : {{ value }}</h5>
+              {% endfor %}
+            </div>
+
+            <div class="container">
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                {% if prediction == 0 %}
+                <h1 style="color: black">Result: <span style="color: blue">Negative!! </span><span style="font-size: 20px; color: grey"> (Healthy)</span></h1>
+                {% else %}
+                <h1 style="color: black">Result: <span style="color: red">Positive!! </span> <span style="font-size: 20px; color: grey">(Heart Disease Detected)</span></h1>
+                {% endif %}
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <form method="get" action="{{ url_for('home') }}">
+                  <button type="submit" class="btn btn-primary btn-xl rounded-pill mt-5" value="submit">Back</button>                
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="background: #dea6af">
+
+  <section>
+    <div class="container text-center">
+        <h1 class="masthead-subheading mb-0" style="padding-bottom: 12px; padding-top: 12px">How this Heart disease detection works?</h1>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe80RRrnsEzeEinfZ6Y6kbYQkZdF8nCW8hLsvcamKh1Q7Yz91i" alt="Message logo">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Heart disease Dataset</h2>
+            <p style="font-size: 20px">Medical report data is collected from various rescources,to form a dataset which includes data of both people suffering from heart disease and those who are healthy.Based on this dataset Machine Learning model is trained.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHO9MJSE63vHBLyKz_nnJL3aLSPboiT5mAbvmGGRWljQOux2d" alt="ML logo">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Machine Learning Model</h2>
+            <p style="font-size: 20px">Using Logistic Regression Algorithm and KNN Algorithm develop a Machine Learning model which is trained on collected medical dataset.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvXjX7dphVsv9yljf_-9Kr5OSy5uOR43pHJQrSrELMITaVOnd" alt="Save logo">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                <h2 class="display-4">Save the trained ML Model</h2>
+                <p style="font-size: 20px">saving the trained model for future predictions on input values.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQjFFWx30FExZLEXoihYKcqFgVlsi4EJo5MRoWMMoYuSExvycw" alt="Spam logo">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-5">
+                <h2 class="display-4">Make Predictions</h2>
+                <p style="font-size: 20px">On entering any individual's medical data as input to ML model it predicts the individual as suffering from heart disease or is healthy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Data analytics & Machine Learning By AKD</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>
