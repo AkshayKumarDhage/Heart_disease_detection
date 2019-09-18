@@ -2,7 +2,7 @@
 
 This repository contains all the code files develop for this web app project.
 
-<img src='https://images.agoramedia.com/everydayhealth/gcms/Flu-Shot-May-Guard-Against-Irregular-Heart-Rate-722x406.jpg' height='1000px' width="2000px">
+<img src='https://images.agoramedia.com/everydayhealth/gcms/Flu-Shot-May-Guard-Against-Irregular-Heart-Rate-722x406.jpg' height='500px' width="2000px">
 
 This is a Machine Learning project which is deployed as a web application.
 
