@@ -24,4 +24,4 @@ Files introduction for this repository,
 5. "static" and "templates" folder consists of html and css files used in developing the web app.
 6. Finally deployed on Heroku, link: https://heart-disease-detection.herokuapp.com 
 
-<img src='https://images.agoramedia.com/everydayhealth/gcms/Flu-Shot-May-Guard-Against-Irregular-Heart-Rate-722x406.jpg' style='width: 100px; height=: 40px;'>
+<img src='https://images.agoramedia.com/everydayhealth/gcms/Flu-Shot-May-Guard-Against-Irregular-Heart-Rate-722x406.jpg' style='width: 100px; height: 40px;'>
