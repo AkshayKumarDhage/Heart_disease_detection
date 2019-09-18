@@ -12,9 +12,13 @@ Objective: This project is to develop a machine learning model which can be used
 
 
 Programming language: Python3
+
 Libraries: Sklearn, Pandas, NumPy, Matplotlib, Seaborn etc.
+
 Web framework: Flask web framework in Python
+
 Deployment: Heroku
+
 
 skills used: programming, data analysis, machine learning algorithm knowledge, data structures and algorithm knowledge, web development.
 
