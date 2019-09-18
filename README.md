@@ -2,6 +2,8 @@
 
 This repository contains all the code files develop for this web app project.
 
+<img src='https://images.agoramedia.com/everydayhealth/gcms/Flu-Shot-May-Guard-Against-Irregular-Heart-Rate-722x406.jpg' height='1000px' width="2000px">
+
 This is a Machine Learning project which is deployed as a web application.
 
 Preview: https://heart-disease-detection.herokuapp.com
@@ -23,5 +25,3 @@ Files introduction for this repository,
 4. "app.py" has all the code used in developing web application for hosting this Machine Model as a service. This is developed using Flask      web framework.
 5. "static" and "templates" folder consists of html and css files used in developing the web app.
 6. Finally deployed on Heroku, link: https://heart-disease-detection.herokuapp.com 
-
-<img src='https://images.agoramedia.com/everydayhealth/gcms/Flu-Shot-May-Guard-Against-Irregular-Heart-Rate-722x406.jpg' height='42px' width="100px">
