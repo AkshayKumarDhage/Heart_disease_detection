@@ -8,7 +8,7 @@ This is a Machine Learning project which is deployed as a web application.
 
 Preview: https://heart-disease-detection.herokuapp.com
 
-Objective: This project is to develop a machine learning model which can be used to predict wheater a patient suffers from heart disease for his given medical report data.
+Objective: This project is to develop a machine learning model which can be used to predict wheather a patient suffers from heart disease for his given medical report data.
 
 
 Programming language: Python3
