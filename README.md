@@ -29,3 +29,5 @@ Files introduction for this repository,
 4. "app.py" has all the code used in developing web application for hosting this Machine Model as a service. This is developed using Flask      web framework.
 5. "static" and "templates" folder consists of html and css files used in developing the web app.
 6. Finally deployed on Heroku, link: https://heart-disease-detection.herokuapp.com 
+
+[![HitCount](http://hits.dwyl.com/AkshayKumarDhage/Heart_disease_detection.svg)](http://hits.dwyl.com/AkshayKumarDhage/Heart_disease_detection)
